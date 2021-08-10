@@ -34,9 +34,11 @@ Turbofan引擎是一種現代的汽油渦輪引擎，NASA空間探索局用的�
 3. 地面實況數據：它包含測試數據中每個發動機的真實剩餘循環信息。
 
 ## 資料前處理
-1. 將週期(C/T)與剩餘壽命合併成TTF(Time to Failure)
-2. 設定閥值：可依需求訂定剩餘多少週期將視為失效，此處設定為C/T=30
-3. Label：將大於閥值標記為可使用(1)、低於閥值標記為已失效(0)
+1. 將週期(C/T)與剩餘壽命合併成TTF(Time to Failure)。
+2. 設定閥值：可依需求訂定剩餘多少週期將視為失效，此處設定為C/T=30。
+3. Label：將大於閥值標記為可使用(1)、低於閥值標記為已失效(0)。
+
+<img width="832" alt="image" src="https://user-images.githubusercontent.com/81677812/128854605-5aacef92-fea0-439a-9a16-26d9542f1799.png">
 
 ## 模型評估
 
@@ -45,6 +47,15 @@ Turbofan引擎是一種現代的汽油渦輪引擎，NASA空間探索局用的�
 |    LSTM   |    99.4%   |    95.5%    |  97.9%   |  96.8%    |
 |    DNN    |    97.3%   |    95.2     |  97.2%   |  96.0%    |
 |    SVC    |    91.1%   |    92.7%    |  91.0%   |  91.7%    |
+
+* LSTM
+
+<img width="419" alt="LSTM-4" src="https://user-images.githubusercontent.com/81677812/128854467-9dc0d21a-c019-4203-8b7c-fc1428e3e0c1.png">
+
+* DNN
+
+<img width="417" alt="DNN-3" src="https://user-images.githubusercontent.com/81677812/128854498-f1160a97-32ca-4848-80e9-1019176756ff.png">
+
 
 ## 結論
 使用神經網路效果皆顯著不錯。而LSTM為一種遞迴神經網路，其原理將神經元輸出再接回神經元的輸入，使其具有長短期記憶的特性，因此資料含有週期與壽命數據，當有時間序列資料集可以利用LSTM、RNN等時間循環網路。
