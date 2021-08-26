@@ -64,4 +64,7 @@
 <img width="810" alt="image" src="https://user-images.githubusercontent.com/81677812/130912260-59792811-ec9a-463a-9fa1-9bf548723d24.png">
 
 2. L2正則化
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/81677812/130957336-c9dfaafa-6e15-4ac8-a766-17fc263305a2.png">
+
  
