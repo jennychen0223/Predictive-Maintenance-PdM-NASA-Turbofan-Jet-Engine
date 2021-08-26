@@ -34,7 +34,6 @@
 1. RUL (Remaining useful life)
 2. MinMax Normalization
 3. Window size : 50 cycles
-4. 隨機種子：
 
 <img width="832" alt="image" src="https://user-images.githubusercontent.com/81677812/128854605-5aacef92-fea0-439a-9a16-26d9542f1799.png">
 
