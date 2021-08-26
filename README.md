@@ -34,7 +34,6 @@
 1. RUL (Remaining useful life)
 2. MinMax Normalization
 3. Window size : 50 cycles
-4. 隨機種子：
 
 <img width="832" alt="image" src="https://user-images.githubusercontent.com/81677812/128854605-5aacef92-fea0-439a-9a16-26d9542f1799.png">
 
@@ -55,11 +54,14 @@
 3. Bi-LSTM：增加反向的LSTM，多考慮反向數據，增加數據前後的依賴性。
 
 ### 探討LSTM避免過擬和的不同處理方法：
-1. Dropout (0.2)
-2. Earlystop
+1. EarlyStopping
    * patience：val_loss訓練多少個 epoch 執行週期沒改善就停止。 min_delta 小，patient 可以相對降低；反之，則 patient 加大
    * min_delta：評斷監控的數據是否有改善標準，唯有當數據變動幅度大於 min_delta 才算是有改善。
    * verbose：有 0 或 1 兩種設置。 0 是 silent 不會輸出任何的訊息， 1 的話會輸出一些 debug 用的訊息。 
    * mode：有 auto, min 和 max 三種設置選擇。用來設定監控的數據的改善方向，若希望監控的數據是越大越好，則設置為 max，如：acc；反之，若希望數據越小越好，則設定 min，如：loss。
 
 <img width="810" alt="image" src="https://user-images.githubusercontent.com/81677812/130912260-59792811-ec9a-463a-9fa1-9bf548723d24.png">
+
+2. L2正則化
+
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/81677812/130957643-e8391489-5f44-4d70-8103-9e08d0254f4f.png"> 
