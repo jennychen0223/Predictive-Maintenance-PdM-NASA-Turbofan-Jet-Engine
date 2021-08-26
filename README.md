@@ -44,7 +44,7 @@
 |        LSTM      |    20.18   |
 | CNN+LSTM+Bi-LSTM |    17.08   |
 
-* CNN+LSTM+Bi-LSTM
+### CNN+LSTM+Bi-LSTM
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/81677812/130894382-cfc0be39-a269-4637-8c62-4a5b2435ad84.png">
 
@@ -53,7 +53,7 @@
 2. LSTM：處理長時間序列，避免梯度爆炸或消失。
 3. Bi-LSTM：增加反向的LSTM，多考慮反向數據，增加數據前後的依賴性。
 
-* 探討LSTM避免過擬和的不同處理方法：
+### 探討LSTM避免過擬和的不同處理方法：
 1. Dropout
 2. Earlystop
 
