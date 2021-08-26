@@ -57,7 +57,7 @@
 ### 探討LSTM避免過擬和的不同處理方法：
 1. Dropout
 2. Earlystop
-
+參數：
 * patience：val_loss訓練多少個 epoch 執行週期沒改善就停止。 min_delta 小，patient 可以相對降低；反之，則 patient 加大
 * min_delta：評斷監控的數據是否有改善標準，唯有當數據變動幅度大於 min_delta 才算是有改善。
 * verbose：有 0 或 1 兩種設置。 0 是 silent 不會輸出任何的訊息， 1 的話會輸出一些 debug 用的訊息。 
