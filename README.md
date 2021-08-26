@@ -62,3 +62,5 @@
 * min_delta：評斷監控的數據是否有改善標準，唯有當數據變動幅度大於 min_delta 才算是有改善。
 * verbose：有 0 或 1 兩種設置。 0 是 silent 不會輸出任何的訊息， 1 的話會輸出一些 debug 用的訊息。 
 * mode：有 auto, min 和 max 三種設置選擇。用來設定監控的數據的改善方向，若希望監控的數據是越大越好，則設置為 max，如：acc；反之，若希望數據越小越好，則設定 min，如：loss。
+
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/81677812/130912082-65384519-2c0d-40ce-a3d5-a82b1e969493.png">
