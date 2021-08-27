@@ -69,4 +69,4 @@
 
 ### 探討不同Batch size 
 
-<img width="799" alt="image" src="https://user-images.githubusercontent.com/81677812/131156983-30ce9629-3207-4b7a-839f-d0ee450df186.png">
+<img width="832" alt="image" src="https://user-images.githubusercontent.com/81677812/131160095-3e5c0217-565c-4bf0-9a57-cfb5c49e1726.png">
