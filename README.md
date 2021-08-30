@@ -22,7 +22,9 @@
 - 了解資料
 - 資料前處理
 - 模型評估
-- 結論
+- CNN+LSTM+Bi-LSTM結構
+- 探討LSTM避免Overfitting的不同處理方法
+- 探討Batch size的影響
 
 ## 了解資料
 
@@ -44,7 +46,7 @@
 |        LSTM      |    20.18   |
 | CNN+LSTM+Bi-LSTM |    17.08   |
 
-### CNN+LSTM+Bi-LSTM
+### CNN+LSTM+Bi-LSTM結構
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/81677812/130894382-cfc0be39-a269-4637-8c62-4a5b2435ad84.png">
 
@@ -69,7 +71,7 @@
 <img width="793" alt="image" src="https://user-images.githubusercontent.com/81677812/131303089-c66ef2bd-c1e8-4016-9616-5ca403975a65.png">
 
 
-### 探討設定不同Batch size的值
+### 探討Batch size的影響
 batch_size表示單次訓練中，要投入多少資料給神經網路。為了讓梯度下降法有更好的效果：一個神經網路就像一條曲折的山稜線，梯度下降法就像是站在山稜線上的某一點，然後四下觀望後開始往下走一樣。
 * 這個移動的過程分成兩個步驟：
 1. 觀察四周狀況，決定移動方向。
