@@ -57,16 +57,30 @@
 1. EarlyStopping
    * patience：val_loss訓練多少個 epoch 執行週期沒改善就停止。 min_delta 小，patient 可以相對降低；反之，則 patient 加大
    * min_delta：評斷監控的數據是否有改善標準，唯有當數據變動幅度大於 min_delta 才算是有改善。
-   * verbose：有 0 或 1 兩種設置。 0 是 silent 不會輸出任何的訊息， 1 的話會輸出一些 debug 用的訊息。 
    * mode：有 auto, min 和 max 三種設置選擇。用來設定監控的數據的改善方向，若希望監控的數據是越大越好，則設置為 max，如：acc；反之，若希望數據越小越好，則設定 min，如：loss。
 
-<img width="810" alt="image" src="https://user-images.githubusercontent.com/81677812/130912260-59792811-ec9a-463a-9fa1-9bf548723d24.png">
+<img width="802" alt="image" src="https://user-images.githubusercontent.com/81677812/131292260-c3f52f0f-d328-4370-85f9-0fde01370df6.png">
+
 
 2. L2正則化
 
-<img width="795" alt="image" src="https://user-images.githubusercontent.com/81677812/130957643-e8391489-5f44-4d70-8103-9e08d0254f4f.png"> 
+<img width="802" alt="image" src="https://user-images.githubusercontent.com/81677812/131303032-676922a2-cb61-41ef-9e73-5c5eacf9fafe.png">
+
+<img width="793" alt="image" src="https://user-images.githubusercontent.com/81677812/131303089-c66ef2bd-c1e8-4016-9616-5ca403975a65.png">
 
 
-### 探討不同Batch size 
+### 探討設定不同Batch size的值
+batch_size表示單次訓練中，要投入多少資料給神經網路。為了讓梯度下降法有更好的效果：一個神經網路就像一條曲折的山稜線，梯度下降法就像是站在山稜線上的某一點，然後四下觀望後開始往下走一樣。
+* 這個移動的過程分成兩個步驟：
+1. 觀察四周狀況，決定移動方向。
+2. 往前走一小步。
+
+* 如果計算完所有的資料，才開始往下走，那會有兩個問題：
+1. 要觀察很久才走一步，儘管這一步是最有效率的一步，但一小步還是一小步，所以還是會走得很慢。
+2. 會很容易走進離你最近的局域最低點(Local Minimun)，然後就卡在那裏了。
+
+### 所以設定 batch_size可以避免
+因為使用batch_size的時候，只會觀察相當於batch_size數量的樣本並求其梯度的平均，也就是只看某些方向然後就開始移動，儘管還是會下降，但它移動的方向並不一定是最佳解，甚至可能會走錯。
+可以想像設定batch_size後，移動就變成不由自主地橫衝直撞，雖然還是可以稍微控制要往哪裡移動，但大部分都會被逼著隨便亂跑，但看似沒效率的情況，反而避免了掉入局域最低點(Local Minimun)的情況。
 
 <img width="832" alt="image" src="https://user-images.githubusercontent.com/81677812/131160095-3e5c0217-565c-4bf0-9a57-cfb5c49e1726.png">
