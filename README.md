@@ -85,4 +85,6 @@ batch_size表示單次訓練中，要投入多少資料給神經網路。為了�
 因為使用batch_size的時候，只會觀察相當於batch_size數量的樣本並求其梯度的平均，也就是只看某些方向然後就開始移動，儘管還是會下降，但它移動的方向並不一定是最佳解，甚至可能會走錯。
 可以想像設定batch_size後，移動就變成不由自主地橫衝直撞，雖然還是可以稍微控制要往哪裡移動，但大部分都會被逼著隨便亂跑，但看似沒效率的情況，反而避免了掉入局域最低點(Local Minimun)的情況。
 
-<img width="832" alt="image" src="https://user-images.githubusercontent.com/81677812/131160095-3e5c0217-565c-4bf0-9a57-cfb5c49e1726.png">
+<img width="780" alt="image" src="https://user-images.githubusercontent.com/81677812/131343637-8ac6977f-87fc-4495-9682-9c2e00f08e2c.png">
+
+<img width="797" alt="image" src="https://user-images.githubusercontent.com/81677812/131343658-69c22c79-7151-4624-a052-91320ac58e04.png">
