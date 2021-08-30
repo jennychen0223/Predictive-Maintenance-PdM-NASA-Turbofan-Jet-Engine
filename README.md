@@ -65,3 +65,8 @@
 2. L2正則化
 
 <img width="795" alt="image" src="https://user-images.githubusercontent.com/81677812/130957643-e8391489-5f44-4d70-8103-9e08d0254f4f.png"> 
+
+
+### 探討不同Batch size 
+
+<img width="832" alt="image" src="https://user-images.githubusercontent.com/81677812/131160095-3e5c0217-565c-4bf0-9a57-cfb5c49e1726.png">
