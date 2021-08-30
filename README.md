@@ -66,7 +66,7 @@
 
 2. L2正則化
 
-<img width="802" alt="image" src="https://user-images.githubusercontent.com/81677812/131303032-676922a2-cb61-41ef-9e73-5c5eacf9fafe.png">
+<img width="796" alt="image" src="https://user-images.githubusercontent.com/81677812/131351473-b85fdb6d-c4f8-4277-ae03-f8ef96a6ca5b.png">
 
 <img width="793" alt="image" src="https://user-images.githubusercontent.com/81677812/131303089-c66ef2bd-c1e8-4016-9616-5ca403975a65.png">
 
